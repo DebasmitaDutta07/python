@@ -1,0 +1,8 @@
+# Partial abbreviation of a name
+str=input("ENTER THE STRING : ")
+x=str.split()
+i=0
+for i in range(len(x)-1):
+    print(x[i][0],end=" ")
+    i+=1
+print(x[-1])

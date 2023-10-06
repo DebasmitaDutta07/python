@@ -1,0 +1,25 @@
+def BinarySearch(array,size,value):
+    low=0
+    high=size-1
+    while(low<=high):
+        mid=(low+high)//2
+        if(array[mid]==value):
+            return mid+1
+        elif(array[mid]<value):
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+
+ah=[]
+a=int(input("ENTER THE SIZE OF LIST : "))
+i=0
+print("ENTER THE NUMBERS : ")
+for i in range(a):
+    x=int(input())
+    ah.append(x)
+    i+=1
+v=int(input("ENTER THE SEARCHING ITEM : "))
+
+x=BinarySearch(ah,a,v)
+print("AFTER BINARY SEARCHING ITEM IS : ",x)

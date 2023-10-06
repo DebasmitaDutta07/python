@@ -1,0 +1,5 @@
+#remove extra space from any string
+str=input("ENTER THE STRING : ")
+x=str.split()
+for i in x:
+    print(i,end=" ")

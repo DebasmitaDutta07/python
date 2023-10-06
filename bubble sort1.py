@@ -1,0 +1,20 @@
+def BubbleSort(array):
+    for i in range(0,len(array)-1):
+        for j in range(len(array)-1):
+            if(array[j]>array[j+1]):
+                temp=array[j]
+                array[j]=array[j+1]
+                array[j+1]=temp
+    return array
+
+ah=[]
+a=int(input("ENTER THE SIZE OF LIST : "))
+i=0
+print("ENTER THE NUMBERS : ")
+for i in range(a):
+    x=float(input())
+    ah.append(x)
+    i+=1
+print("BEFORE SORTING : ",ah)
+BubbleSort(ah)
+print("AFTER SORTING : ",ah)

@@ -1,0 +1,15 @@
+num=int(input("ENTER THE NUMBER : "))
+b=1
+a=0
+i=0
+sum=0
+while(i<=num):
+    print(a,end='+')
+    sum=sum+a
+    f=a+b
+    a=b
+    b=f
+    
+    i=i+1
+
+print( "\b = ",sum)

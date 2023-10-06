@@ -1,0 +1,8 @@
+#SUM THE SQUARE OF THE DIGITS
+num=int(input("ENTER THE NUMBER : "))
+sum=0
+while(num>0):
+    r=num%10
+    num=int(num/10)
+    sum=sum+(r*r)
+print(sum)

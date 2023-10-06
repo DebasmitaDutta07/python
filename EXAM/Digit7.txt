@@ -1,0 +1,14 @@
+# COUNT THE 0 IN A NUMBER
+def countZero(num):
+    i=0
+    while(num>0):
+        r=num%10
+        num=int(num/10)
+        if(r==0):
+            i+=1
+        
+    return i
+
+number=int(input("  ENTER THE NUMBER : "))
+x=countZero(number)
+print(x)

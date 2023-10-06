@@ -1,0 +1,15 @@
+#10-20+30-40+50....N term
+num=int(input("ENTER THE RANGE : "))
+c=1
+i=10
+sum=0
+while(c<=num):
+    if(c%2==0):
+        print(i,end="+")
+        sum=sum-i
+    else:
+        print(i,end="-")
+        sum=sum+i
+    c+=1
+    i+=10
+print("\b = ",sum)

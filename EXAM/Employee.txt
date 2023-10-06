@@ -1,0 +1,22 @@
+class Employee:
+    def __init__(self,id,name,basic):
+        self.id=id
+        self.name=name
+        self.basic=basic
+    def __str__(self):
+        return f"EMPLOYEE ID : {self.id},NAME : {self.name}, BASIC : {self.basic}"
+
+emp=[
+    Employee(101,"Raj Pal",50000),
+    Employee(102,"Rahul Ghosh",10000), 
+    Employee(103,"Nayan Adhikary",30000),
+    Employee(104,"Sagar Das",40000),
+    Employee(105,"Raj Nath",20000)
+]
+
+
+
+employee_sorted=sorted(emp,key=lambda e:e.basic,reverse=True)
+
+for i in employee_sorted:
+    print(i)

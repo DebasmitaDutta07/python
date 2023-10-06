@@ -1,0 +1,9 @@
+n=int(input("enter a number"))
+a=0
+b=1
+sum=0
+while(sum<=n):
+    print(f"{sum}", end=" ")
+    a=b
+    b=sum
+    sum=a+b
